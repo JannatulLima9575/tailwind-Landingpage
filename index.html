@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Landing Page</title>
 </head>
-<body>
+<body class="bg-white">
     <!-- Navbar section  -->
-     <nav>
-        <h2>MADE <span>EASY</span></h2>
-            <ul>
-                <li>Design Projects</li>
-                <li>Pricing</li>
-                <li>FAQs</li>
-                <li>Start Design</li>
+     <nav class="flex py-5 justify-around items-center">
+        <h2 class="text-3xl">MADE<span class="text-green-700">EASY</span></h2>
+            <ul class="flex gap-x-8">
+                <li class="cursor-pointer font-semibold hover:text-green-700">Design Projects</li>
+                <li class="cursor-pointer font-semibold hover:text-green-700">Pricing</li>
+                <li class="cursor-pointer font-semibold hover:text-green-700">FAQs</li>
+                <li class="cursor-pointer font-semibold hover:text-green-700">Start Design</li>
             </ul>
+            <button class="bg-white text-black px-6 font-semibold py-2 border-2 rounded-full hover:bg-green-700 hover:text-white">SIGN IN</button>
      </nav>
      <!-- banner section  -->
       <div>
         <div>
             <h1>Home Designs Made Easy</h1>
             <p>Experience the joy of designing your home in 3D using products from brands yuo can buy.</p>
+        </div>
+        <div>
+            <img src="landing.jpeg" alt="">
         </div>
       </div>
 </body>
